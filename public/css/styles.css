@@ -7,58 +7,49 @@ header {
     height: 75px;
 }
 
-.logo {
-    position: absolute;
-    left: 10px;
-    top: 8px;
-    border-radius: 10px;
-    opacity: 0.75;
+.navigation-links {
+    padding: 25px 50px 75px 100px;
 }
 
-.search-box {
+.link {
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+
+.link:visited {
+    color: white;
+}
+
+.link:hover {
+    color: rgb(43, 93, 219);
+}
+
+.link:active {
+    color: rgb(49, 158, 114);
+}
+
+.back-to-main {
+    padding: 10px 10px 10px 10px;
+    color: rgb(43, 93, 219);
+}
+
+.back-to-main:visited {
+    color: rgb(43, 93, 219);
+}
+
+.back-to-main:hover {
+    color: rgb(225, 36, 36);
+}
+
+.back-to-main:active {
+    color: rgb(49, 158, 114);
+}
+
+.container {
     font-size: 40px;
     position: relative;
     left: 10px;
     top: 80px;
-}
-
-.search-box-input {
-    padding: 12px 12px;
-    box-sizing: border-box;
-}
-
-.search-box-button {
-    background: #008CBA;
-    padding: 12px 12px;
-    color: white;
-    border-style: none;
-    cursor: pointer;
-}
-
-.search-box-button:hover {
-    background-color: #04AA6D;
-}
-
-.search-result {
-    padding: 12px 12px;
-    position: relative;
-    left: 10px;
-    top: 80px;
-    margin-top: 10px;
-    width: 75%;
-    background: #989190;
-}
-
-table,
-th,
-td {
-    border: 1px solid ghostwhite;
-    border-collapse: collapse;
-}
-
-th,
-td {
-    padding: 10px;
 }
 
 footer {
