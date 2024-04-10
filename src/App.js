@@ -3,12 +3,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './fragments/Home';
-import Fragment_1 from './fragments/Fragment_1';
-import Fragment_2 from './fragments/Fragment_2';
+import LoginForm from './fragments/LoginForm';
+import RegistrationForm from './fragments/RegistrationForm';
 
 export default class App extends React.Component {
 
     render() {
+        
         return (
             <div>
                 <BrowserRouter>
@@ -16,8 +17,8 @@ export default class App extends React.Component {
 
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/fragment_1" element={<Fragment_1 />} />
-                        <Route path="/fragment_2" element={<Fragment_2 />} />
+                        <Route path="/login-form" element={<LoginForm />} />
+                        <Route path="/registration-form" element={<RegistrationForm />} />
                     </Routes>
                 </BrowserRouter>
 

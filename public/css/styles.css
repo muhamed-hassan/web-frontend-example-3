@@ -52,6 +52,56 @@ header {
     top: 80px;
 }
 
+.form {
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    top: 30px;
+    margin-bottom: 100px;
+    background-color: cornflowerblue;
+    height: 150px;
+    width: 350px;
+}
+
+.form-data {
+    position: relative;
+    top: 10px;
+}
+
+.form label {
+    padding: 10px 10px;
+}
+
+.form input {
+    width: 230px;
+}
+
+.form #email {
+    position: relative;
+    left: 28px;
+}
+
+.form-actions {
+    position: relative;
+    top: 30px;
+}
+
+.form button {
+    padding: 10px 20px;
+    margin: 10px;
+    width: 155px;
+    cursor: pointer;
+    border: none;
+}
+
+.form #login-btn:hover {
+    background-color: rgb(51, 180, 115);
+}
+
+.form #cancel-btn:hover {
+    background-color: rgb(200, 56, 51);
+}
+
 footer {
     text-align: center;
     padding: 3px;
