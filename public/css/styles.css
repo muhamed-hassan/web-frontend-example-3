@@ -52,7 +52,11 @@ header {
     top: 80px;
 }
 
-.form {
+/* ******************************************************************************************************* */
+
+/* START: styling login-form */
+
+.login-form {
     font-size: 20px;
     position: relative;
     left: 10px;
@@ -63,30 +67,31 @@ header {
     width: 350px;
 }
 
-.form-data {
+.login-form-data {
     position: relative;
     top: 10px;
 }
 
-.form label {
+.login-form label {
     padding: 10px 10px;
 }
 
-.form input {
+.login-form input {
     width: 230px;
+    border: none;
 }
 
-.form #email {
+.login-form #email {
     position: relative;
     left: 28px;
 }
 
-.form-actions {
+.login-form-actions {
     position: relative;
     top: 30px;
 }
 
-.form button {
+.login-form button {
     padding: 10px 20px;
     margin: 10px;
     width: 155px;
@@ -94,13 +99,89 @@ header {
     border: none;
 }
 
-.form #login-btn:hover {
+.login-form #login-btn {
     background-color: rgb(51, 180, 115);
 }
 
-.form #cancel-btn:hover {
+.login-form #cancel-btn {
     background-color: rgb(200, 56, 51);
 }
+
+/* END: styling login-form */
+
+/* ******************************************************************************************************* */
+
+/* START: styling registration-form */
+
+.registration-form {
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    top: 30px;
+    margin-bottom: 150px;
+    background-color: rgb(51, 180, 115);
+    height: 160px;
+    width: 742px;
+}
+
+.registration-form-data {
+    position: relative;
+    top: 10px;
+}
+
+.registration-form label {
+    padding: 10px 10px;
+}
+
+.registration-form input {
+    width: 230px;
+    border: none;
+}
+
+.registration-form #name {
+    position: relative;
+    left: 29px;
+    margin-right: 50px;
+}
+
+.registration-form #email {
+    position: relative;
+    left: 66px;
+}
+
+.registration-form #password {
+    margin-right: 21px;
+}
+
+.registration-form #mobile {
+    position: relative;
+    left: 19px;
+}
+
+.registration-form-actions {
+    position: relative;
+    top: 30px;
+}
+
+.registration-form button {
+    padding: 10px 20px;
+    margin: 10px;
+    width: 350px;
+    cursor: pointer;
+    border: none;
+}
+
+.registration-form #register-btn {
+    background-color: rgb(45, 100, 194);
+}
+
+.registration-form #cancel-btn {
+    background-color: rgb(200, 56, 51);
+}
+
+/* END: styling registration-form */
+
+/* ******************************************************************************************************* */
 
 footer {
     text-align: center;

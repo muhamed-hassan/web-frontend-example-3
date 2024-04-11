@@ -5,7 +5,7 @@ export default class Home extends React.Component {
     render() {
 
         return (
-            <div class="container">Home</div>
+            <div class="container">Example of demonestrating forms using 2 simple examples as shown in the main-menu.</div>
         );
     }
 
