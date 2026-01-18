@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default class RegistrationForm extends React.Component {
 
@@ -56,37 +55,33 @@ export default class RegistrationForm extends React.Component {
     render() {
 
         return (
-            <div class="container">
-                <form class="registration-form">
-                    <div class="registration-form-data">
-                        <label for="name">Name:</label>
-                        <input id="name" type="text" value={this.state.name} onChange={this.handleChange} />
-                    
-                        <label for="email">Email:</label>
-                        <input id="email" type="email" value={this.state.email} onChange={this.handleChange} />
-                    </div>
+            <form class="registration-form">
+                <div class="registration-form-data">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" value={this.state.name} onChange={this.handleChange} />
 
-                    <div class="registration-form-data">
-                        <label for="password">Password:</label>
-                        <input id="password" type="password" value={this.state.password} onChange={this.handleChange} />
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" value={this.state.email} onChange={this.handleChange} />
+                </div>
 
-                        <label for="postalAddress">Postal address:</label>
-                        <input id="postalAddress" type="text" value={this.state.postalAddress} onChange={this.handleChange} />
-                    </div>
+                <div class="registration-form-data">
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" value={this.state.password} onChange={this.handleChange} />
 
-                    <div class="registration-form-data">
-                        <label for="mobile">Mobile:</label>
-                        <input id="mobile" type="text" value={this.state.mobile} onChange={this.handleChange} />
-                    </div>
+                    <label for="postalAddress">Postal address:</label>
+                    <input id="postalAddress" type="text" value={this.state.postalAddress} onChange={this.handleChange} />
+                </div>
 
-                    <div class="registration-form-actions">                        
-                        <button id="register-btn" type="submit" onClick={this.handleSubmit}>Register</button>
-                        <button id="cancel-btn" type="reset" onClick={this.resetForm}>Cancel</button>
-                    </div>
-                </form>
+                <div class="registration-form-data">
+                    <label for="mobile">Mobile:</label>
+                    <input id="mobile" type="text" value={this.state.mobile} onChange={this.handleChange} />
+                </div>
 
-                <Link class="back-to-main" to="/">Back to main page</Link>
-            </div>
+                <div class="registration-form-actions">
+                    <button id="register-btn" type="submit" onClick={this.handleSubmit}>Register</button>
+                    <button id="cancel-btn" type="reset" onClick={this.resetForm}>Cancel</button>
+                </div>
+            </form>
         );
     }
 

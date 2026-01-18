@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default class LoginForm extends React.Component {
 
@@ -46,24 +45,21 @@ export default class LoginForm extends React.Component {
     render() {
 
         return (
-            <div class="container">
-                <form class="login-form">
-                    <div class="login-form-data">
-                        <label for="email">Email:</label>
-                        <input id="email" type="email" value={this.state.email} onChange={this.handleChange} />
-                    
-                        <label for="password">Password:</label>
-                        <input id="password" type="password" value={this.state.password} onChange={this.handleChange} />
-                    </div>
+            <form class="login-form">
+                <div class="login-form-data">
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" value={this.state.email} onChange={this.handleChange} />
+                </div>
+                <div class="login-form-data">
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" value={this.state.password} onChange={this.handleChange} />
+                </div>
 
-                    <div class="login-form-actions">                        
-                        <button id="login-btn" type="submit" onClick={this.handleSubmit}>Login</button>
-                        <button id="cancel-btn" type="reset" onClick={this.resetForm}>Cancel</button>
-                    </div>
-                </form>
-
-                <Link class="back-to-main" to="/">Back to main page</Link>
-            </div>
+                <div class="login-form-actions">
+                    <button id="login-btn" type="submit" onClick={this.handleSubmit}>Login</button>
+                    <button id="cancel-btn" type="reset" onClick={this.resetForm}>Cancel</button>
+                </div>
+            </form>
         );
     }
 
